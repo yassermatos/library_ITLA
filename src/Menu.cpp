@@ -29,10 +29,19 @@ void Menu::show()
 					action(option);
 		}
 	} while (option != 5);
-	//TODO: Implement this method.
 
 }
-void Menu::pushBook()
+
+void Menu::limpiarPantalla()
+{
+	#ifdef _WIN32
+	system("cls");
+	#else
+	system("clear");
+	#endif
+}
+
+void Menu::newBook()
 {
 	string nombre;
 	string autor;
@@ -80,11 +89,11 @@ void Menu::action(int option)
 	{
 		case 1:
 		{
-			listBook();
+	//		listBook();
 		}
 		case 2:
 		{
-			pushBook();
+			newBook();
 		}
 		case 3:
 		{
@@ -92,7 +101,7 @@ void Menu::action(int option)
 		}
 		case 4:
 		{
-			findBook();
+		//	findBook();
 		}
 		case 5:
 		{
