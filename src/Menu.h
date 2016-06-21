@@ -10,6 +10,14 @@
 
 class Menu
 {
+	private:
+		void limpiarPantalla();
+		bool validate(int option);
+		void routeAction(int option);
+		void getAllBooks();
+		void newBook();
+		void getLastBook();
+		void getByCategory();
 	public:
 		void show();
 		Menu();
