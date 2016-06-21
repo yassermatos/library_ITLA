@@ -89,7 +89,7 @@ void Menu::action(int option)
 	{
 		case 1:
 		{
-	//		listBook();
+			seeBook();
 		}
 		case 2:
 		{
@@ -101,7 +101,7 @@ void Menu::action(int option)
 		}
 		case 4:
 		{
-		//	findBook();
+			findBook();
 		}
 		case 5:
 		{
